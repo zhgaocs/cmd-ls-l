@@ -12,10 +12,10 @@ void parseArgs(int argc, const char **argv)
             switch (errno)
             {
             case EACCES:
-                fprintf(stderr, "show: cannot access %s: Permission denied\n", argv[i]);
+                fprintf(stderr, "cmd-ls-l: cannot access %s: Permission denied\n", argv[i]);
                 break;
             case ENOENT:
-                fprintf(stderr, "show: cannot access %s: No such file or directory\n", argv[i]);
+                fprintf(stderr, "cmd-ls-l: cannot access %s: No such file or directory\n", argv[i]);
                 break;
             default:
                 fprintf(stderr, "unknown error");
