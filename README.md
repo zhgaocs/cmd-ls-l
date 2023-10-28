@@ -45,3 +45,7 @@ make
 ```
 
 4. Run the program
+
+```shell
+./cmd-ls-l [DIRECTORY|FILE] ...
+```
