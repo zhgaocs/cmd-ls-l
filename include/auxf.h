@@ -1,5 +1,5 @@
 #ifndef AUXF_H
-#define AUXF_H
+#define AUXF_H 1
 
 #include <sys/stat.h>
 
