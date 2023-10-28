@@ -1,5 +1,6 @@
 #include "auxf.h"
 
+// Parse command line arguments and process each file/directory
 void parseArgs(int argc, const char **argv)
 {
     size_t dir_count = 0, start_print = 0, dir_indexes[ARGC_MAX];
@@ -53,6 +54,7 @@ void parseArgs(int argc, const char **argv)
     }
 }
 
+// Show directory information, including its files and subdirectories
 int showDirInfo(const char *dir_path)
 {
     DIR *dir;
@@ -87,6 +89,7 @@ int showDirInfo(const char *dir_path)
     return 0;
 }
 
+// Show file information, including file type, permissions, owner, size, modification time, etc.
 int showFileInfo(const char *file_path, int pr_fpath)
 {
     struct stat stat_buf;
@@ -155,6 +158,7 @@ int showFileInfo(const char *file_path, int pr_fpath)
     return 0;
 }
 
+// Extract the file name from a file path
 void extractLastName(const char *path, char *buf)
 {
     if (NULL == path || NULL == buf)
