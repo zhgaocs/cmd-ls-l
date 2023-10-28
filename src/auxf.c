@@ -1,7 +1,7 @@
 #include "auxf.h"
 
 // Parse command line arguments and process each file/directory
-void parseArgs(int argc, const char **argv)
+void parseArgs(int argc, char **argv)
 {
     size_t dir_count = 0, start_print = 0, dir_indexes[ARGC_MAX];
     struct stat stat_buf;
